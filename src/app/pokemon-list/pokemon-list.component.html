@@ -1,0 +1,12 @@
+<pre>
+    <!-- {{ respuesta2 | json }} -->
+  </pre>
+  
+  <ul>
+    <li *ngFor="let pokemon of pokemons">
+      <a [routerLink]="['/pokemon/' + pokemon.url]">
+      {{ pokemon.name }}
+      </a>
+    </li>
+  </ul>
+  
